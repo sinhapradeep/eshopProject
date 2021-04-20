@@ -1,0 +1,80 @@
+ <html>
+<head>
+<title>
+This is </title>
+    </head>
+
+<link rel="stylesheet" href="style.css">
+
+
+<style>
+.
+{
+    margin:0;
+    padding:0;
+    font-family:'poppins', sans-sarif;
+}
+body
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    backbground: #000;
+
+}
+h2
+{
+    position:relative;
+    margin:0;
+    font-size:4em;
+    font-weight:900;
+    color: #fff;
+    z-index: 1;
+    overflow:hidden;
+}
+h2:before
+{
+    content:'';
+    position:absolute;
+    left: 0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(90deg , transparent 0% , #000 5% , #000 100%);
+    animation: animate 6.5s linear forwards;
+}
+@keyframes animate
+{
+    0%
+    {
+        left:300%
+    }
+}
+h2 span
+{
+    color: #ff022c;
+}
+video
+{
+    position:absolute;
+    top:0 ;
+    left: 0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index:2;
+    pointer-events:none;
+    mix-blend-mode:screen;
+
+}
+</style>
+
+<body>
+
+<video src="static/particles.mp4" muted="" autoplay=""></video>
+<h2><span>W</span>eb<span>A</span>dventure</h2>
+
+</body>
+</html>
+
+

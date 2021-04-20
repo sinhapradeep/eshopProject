@@ -1,0 +1,60 @@
+{%extends 'index.html'%}
+{% block title %}
+This is about title
+{% endblock title %}
+{% block body%}
+
+<center>
+ <style>
+       .error{
+           color:red;
+          }
+    </style>
+
+<form action="" method="post" novalidate>
+ {% csrf_token %}
+
+    {% if form.non_field_errors %}
+          {% for error in form.non_field_errors %}
+                   <p class="error"> {{error}} </p>
+          {% endfor %}
+    {% endif %}
+
+    {% for fm in form %}
+           {{fm.label_tag}} {{fm}} {{fm.errors|striptags}}<br><br>
+    {% endfor %}
+
+
+ <input type="submit" value="Login">
+ <a href="{% url 'sign_up' %}">Sign Up </a>
+ {% if messages %}
+    {% for message in messages %}
+      <small {{ message.tags }} class="{{ message.tags }} " >
+          {{ message }}</small>
+    {% endfor %}
+    {% endif %}
+</form>
+</center>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<font face="courier" color='red' size="5" >
+  <h2> <b><u><blink>WHY !!! THIS SHOP ?</blink></u></b></h2></font>
+<font face="courier" color='green' size="5" >
+
+<marquee><h3></h3><b> Hurry up !!!!Hurry up !!!!Hurry up !!!!Hurry up !!!!Hurry up !!!!Hurry up !!!!</b></h3> </marquee>
+</font>
+
+
+
+<a href="{% url 'index' %}"><< Previous  </a><br>
+<a href="{% url 'profile' %}">Next >> </a><br>
+<a href="{% url 'user_logout' %}">Logout  </a>
+<hr color="red">
+<img src="/static/pic2.jpeg" width=70 height=70>
+<font face="arial" size="4" color="cyan">
+  </h3><u>Registered office:</u> COLLECTION Zone MART,Near Takrohi Petrol pump,
+    Indira Nagar, Lucknow<br></font>
+
+{% endblock body %}

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+ <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"/>
+
+  <title>{%block title%}{%endblock title%}CollectionZone</title>
+  </head>
+ <style>
+
+
+        .custom-margin{
+              margin-top:20vh;
+        }
+        body{
+             background-image:url('/static/b2.jpeg');
+             background-repeat:no-repeat;
+             width: 100%;
+             height:100%;
+        }
+.
+{
+    margin:0;
+    padding:0;
+    font-family:'poppins', sans-sarif;
+}
+ h2
+{
+    position:relative;
+    margin:0;
+    font-size:4em;
+    font-weight:900;
+    color: #fff;
+    z-index: 1;
+    overflow:hidden;
+}
+h2:before
+{
+    content:'';
+    position:absolute;
+    left: 0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(90deg , transparent 100% , #000 5% , #000 100%);
+    animation: animate 6.5s linear forwards;
+}
+@keyframes animate
+{
+    0%
+    {
+        left:300%
+    }
+}
+h2 span
+{
+    color: #ff022c;
+}
+
+video
+{
+    position:absolute;
+    top:0 ;
+    left: 0;
+    width:100%;
+    height:30%;
+    object-fit: cover;
+    z-index:2;
+    pointer-events:none;
+    mix-blend-mode:screen;
+
+}
+
+    </style>
+
+
+    <div class="jet-animated-text jet-animated-text--effect-fx4" data-settings="{&quot;effect&quot;:&quot;fx4&quot;,&quot;delay&quot;:3000}">
+<div class="jet-animated-text__animated-text">
+<div class="jet-animated-text__animated-text-item active visible" dir="ltr">
+<span style="width: auto; opacity: 0; transform: translateY(100%) rotateY(-180deg);">O</span><span style="width: auto; opacity: 0; transform: translateY(100%) rotateY(-180deg);">U</span><span style="width: auto; opacity: 0; transform: translateY(100%) rotateY(-180deg);">R</span><span style="width: auto; opacity: 0; transform: translateY(100%) rotateY(-180deg);">&nbsp;</span><span style="width: auto; opacity: 0; transform: translateY(100%) rotateY(-180deg);">M</span><span style="width: auto; opacity: 0; transform: translateY(100%) rotateY(-180deg);">O</span><span style="width: auto; opacity: 0.067045; transform: translateY(62.5147%) rotateY(-112.526deg);">T</span><span style="width: auto; opacity: 0.217045; transform: translateY(22.7098%) rotateY(-40.8777deg);">T</span><span style="width: auto; opacity: 0.367045; transform: translateY(10.1158%) rotateY(-18.2085deg);">O</span><span style="width: auto; opacity: 0.517045; transform: translateY(5.10367%) rotateY(-9.18661deg);">:</span><span style="width: auto; opacity: 0.667045; transform: translateY(2.69442%) rotateY(-4.84996deg);">&nbsp;</span><span style="width: auto; opacity: 0.817045; transform: translateY(1.28048%) rotateY(-2.30487deg);">&nbsp;</span><span style="width: auto; opacity: 0.967045; transform: translateY(0.218761%) rotateY(-0.393769deg);">&nbsp;</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">S</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">E</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">R</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">V</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">I</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">C</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">E</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">&nbsp;</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">B</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">E</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">F</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">O</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">R</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">E</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">&nbsp;</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">S</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">E</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">L</span><span style="width: auto; opacity: 1; transform: translateY(0%) rotateY(0deg);">F</span></div>
+
+      <div class="jet-animated-text__animated-text">
+<div class="jet-animated-text__animated-text-item active visible" dir="ltr">
+<span style="width: auto; opacity: 0.998536; transform: translateY(-0.33488%) rotateY(0.401856deg);">O</span><span style="width: auto; opacity: 0.996384; transform: translateY(-0.8296%) rotateY(0.995519deg);">U</span><span style="width: auto; opacity: 0.992335; transform: translateY(-1.76251%) rotateY(2.11501deg);">R</span><span style="width: auto; opacity: 0.985207; transform: translateY(-3.40557%) rotateY(4.08668deg);">&nbsp;</span><span style="width: auto; opacity: 0.973074; transform: translateY(-6.19084%) rotateY(7.42901deg);">M</span><span style="width: auto; opacity: 0.95265; transform: translateY(-10.8214%) rotateY(12.9857deg);">O</span><span style="width: auto; opacity: 0.917977; transform: translateY(-18.4548%) rotateY(22.1457deg);">T</span><span style="width: auto; opacity: 0.857551; transform: translateY(-30.9448%) rotateY(37.1338deg);">T</span><span style="width: auto; opacity: 0.748476; transform: translateY(-50.8818%) rotateY(61.0581deg);">O</span><span style="width: auto; opacity: 0.551855; transform: translateY(-80.6007%) rotateY(96.7209deg);">:</span><span style="width: auto; opacity: 0.24457; transform: translateY(-119.924%) rotateY(143.909deg);">&nbsp;</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">&nbsp;</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">&nbsp;</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">S</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">E</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">R</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">V</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">I</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">C</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">E</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">&nbsp;</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">B</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">E</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">F</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">O</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">R</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">E</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">&nbsp;</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">S</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">E</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">L</span><span style="width: auto; opacity: 0; transform: translateY(-150%) rotateY(180deg);">F</span></div>
+      </div>
+</div>
+
+
+  <font face="arial"  color="pink"  >
+  <b>Tel. No : 9451576857, 9696873754<br>
+        Email   : sinhapradeep125@gmail.com</b></font><br></div></div> </div>
+
+<center>
+<video src="static/particles.mp4" muted="" autoplay=""></video>
+    <h2><span>A</span>-to-<span>Z</span>-<span>S</span>tores</h2>
+    </center>
+
+
+  <center>
+
+
+
+<hr color="red">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">COLLECTION Zone MART</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="about/">About Us</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="test/">Test</a>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Category
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/">All Products</a>
+          <a class="dropdown-item" href="/?category=1">Cloths-Men</a>
+          <a class="dropdown-item" href="/?category=2">Cloths-Women</a>
+            <a class="dropdown-item" href="/?category=3">Shoes</a>
+            <a class="dropdown-item" href="/?category=4">Vegetable</a>
+            <a class="dropdown-item" href="/?category=5">Mobile</a>
+        </div>
+      </li>
+        {% if user is not None %}
+        <li class="nav-item">
+        <a class="nav-link" href="Cart/">Cart</a>
+            <span class="badge badge-info">{{request.session.cart.keys|length}}</span>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Orderview/">Order</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="user_logout/">Log Out</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+        <a class="nav-link" href="sign_up/">Sign Up</a>
+        </li>
+        {% endif %}
+
+    </ul>
+  </div>
+</nav>
+
+
+{%block body%}{%endblock body%}
+
+<a href="{% url 'ul' %}"><h3>Login</h3>  </a>
+{% load cart %}
+  <div class="container-fluid mt-3">
+      <div class="row">
+          <div class="col-lg-2 mx-auto">
+            <div class="list-group">
+                   <a href="/" class="list-group-item list-group-item-action" >All Products </a>
+                {% for category in categories %}
+                   <a href="/?category={{category.id}}" class="list-group-item list-group-item-action" >
+                      {{category.id}}{{category.name}}</a>
+                {% endfor %}
+            </div>
+          </div>
+      <div id='products' class="col-lg-10 mx-auto">
+      <div class="row mx-auto ">
+       {% for product in products %}
+           <div class="card mx-auto"  id="{{product.id}}"  style="width: 18rem;">
+            <img src="{{product.image.url}}" class="card-img-top" alt="...">
+           <div class="card-body">
+           <h5 class="card-title">{{product.name}}</h5>
+           <p class="card-text"><b>{{product.price}}</b></p>
+           </div>
+
+          <div class="card-footer p-0 ">
+           {% if product|is_in_cart:request.session.cart %}
+             <div class="row no-gutters">
+
+           <form action="/#{{product.id}}" class="col-2"   method="post" class="btn-block"  >
+               {% csrf_token %}
+           <input type="text" hidden  name="product" value="{{product.id}}">
+           <input type="text" hidden  name="remove" value="True">
+           <input type="submit" value="-" class="col-2 btn btn-block btn-secondary">
+           </form>
+
+           <div class="text-center col">{{product|cart_quantity:request.session.cart}} in Cart </div>
+
+           <form action="/#{{product.id}}" class="col-2"   method="post" class="btn-block">
+               {% csrf_token %}
+           <input type="text" hidden name="product" value="{{product.id}}">
+           <input type="submit" value="+" class="col-2 btn btn-block btn-secondary">
+           </form>
+
+           </div>
+         {% else %}
+           <form action="/#{{product.id}}" method="post"  class="btn-block">
+             {% csrf_token %}
+            <input type="text" hidden name="product" value="{{product.id}}">
+            <input type="submit" class="float-right btn btn-primary  border btn-sm" value="Add to Cart" >
+            </form>
+           {% endif %}
+
+      </div>
+      </div>
+
+      {% endfor %}
+
+  </div>
+  </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+-->
+    <!-- Option 2: Separate Popper and Bootstrap JS
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+-->
+
+</html>
